@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Cookie', cursive;
+        background-image: url('images/ccwp3.jpg');
+        background-size: contain;
+      }
+    </style>
+<head>
+    <title>The Bakery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="TheBakery.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header id="box1">
+            <h1>The Bakery</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="bakeryhome.html">Home</a></li>
+                <li><a href="menubakery.html">Menu</a></li>
+                <li><a href="customsb.html">Customs</a> </li>
+                <li><a href="donationsb.html">Donations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contactb.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <br>
+            <div id="bakerybox">
+                <div class="container">
+                <p><h4>Welcome to our gluten-free bakery, where passion meets compassion! As the proud owner and a fellow celiac disease warrior, I understand the struggles and limitations that dietary restrictions can impose on our daily lives. That's why I embarked on this journey to create a haven for individuals like you, where the joy of delicious food knows no boundaries.</h4>
+                <h4>Here, you'll find an array of mouthwatering treats carefully crafted with love and expertise, all free from gluten and tailored to meet various dietary needs. Whether you're gluten-intolerant, have other dietary restrictions, or simply seek wholesome and delectable baked goods, our bakery is here to fulfill your cravings and provide a guilt-free indulgence. <br>
+                <h4>Step inside and let the aromas of freshly baked delights enchant you, as we embark together on a delightful culinary adventure that promises to nourish both body and soul.</h4>
+                <br><h4> Welcome to our family, where everyone can savor the pleasures of food without compromise! <br>
+                    with love, <br>
+                    Bee Larracuente <br>
+                </h4>
+                </div>
+                <div id="storefront">
+                </p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="fun-addon">
+            <p class="fun-text">Want to try baking at home?</p>
+            <button class="fun-button" onclick="generateRandomRecipe()">Get a Random Recipe</button>
+          </div>
+          <script>
+            var recipes = [
+              "Chocolate Chip Cookies",
+              "Red Velvet Cupcakes",
+              "Blueberry Muffins",
+              "Banana Bread",
+              "New York Style Cheesecake",
+              "Vanilla Cupcakes",
+              "Brownies",
+              "Scones",
+              "Strawberry Shortcake",
+              "Banana Nut Bread",
+              "Snickerdoodle Cookies",
+              "Lemon Meringue Pie",
+              "Key Lime Pie",
+              "Pumpkin Pie",
+              "Peach Cobbler"
+            ];
+        
+            function generateRandomRecipe() {
+              var randomIndex = Math.floor(Math.random() * recipes.length);
+              var randomRecipe = recipes[randomIndex];
+              
+              alert("You should try to make " + randomRecipe + "!");
+            }
+          </script>
+        <br>
+    </main>
+    <footer>
+        Copyright &copy 2023 The Bakery <br>
+        <a href="mailto:info@thebakerydelights.com">info@thebakerydelights.com</a>
+    </footer>
+</body>
+</html>
